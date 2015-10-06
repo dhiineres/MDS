@@ -1,18 +1,21 @@
 package aulamds;
 
+import java.util.Scanner;
+
 public class MDS {
 
     public static void main(String[] args) {
-        int x = 5;
-        char letra = 'm';
-        String palavra = "palavra";
-        boolean assercao = true;
-        assercao = false;
+        Scanner leitor = new Scanner(System.in);
+        int numero;
         
-        if (assercao){
-            System.out.println(x + "é par");
+        System.out.println("Entre com seu número preferido:");
+        
+        numero = leitor.nextInt();
+        
+        if (numero% 2 == 0){
+            System.out.println(numero +"é par");
         }else{
-            System.out.println("x");
+            System.out.println(numero +"é impar");
         }
     }
 }
