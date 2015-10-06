@@ -6,16 +6,16 @@ public class MDS {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        int numero;
+        int cons;
+        double val, tot;
         
-        System.out.println("Entre com seu número preferido:");
+        System.out.println("Entre com o consumo em quilowatts:");
+        cons = leitor.nextInt();
+        System.out.println("Entre com o valor do quilowatt:");
+        val = leitor.nextDouble();
         
-        numero = leitor.nextInt();
+        tot = (val * cons) * 0.9;
         
-        if (numero% 2 == 0){
-            System.out.println(numero +"é par");
-        }else{
-            System.out.println(numero +"é impar");
-        }
+        System.out.println("O valor total será R$"+ tot);
     }
 }
